@@ -7,4 +7,5 @@
 <h3 align='center'>Member 1: 	SANDEEP G 			(Computer Science Engineering)</h3>
 <h3 align='center'>Member 2: 	RAGURAM R 			(Biomedical Engineering)</h3>
 
+![Car side view finalv1](https://github.com/user-attachments/assets/c9a53fb7-18fd-44fa-86cf-bdc61ab2a639)
 
