@@ -145,4 +145,5 @@ Radar sensors emit **radio waves** that reflect off objects in their path. By an
 
 ![Car side view finalv1](https://github.com/user-attachments/assets/c9a53fb7-18fd-44fa-86cf-bdc61ab2a639)
 ![JXI_TATA_FINAL 1](https://github.com/user-attachments/assets/6245d4e9-db38-43c7-aa36-7f1b4a15d003)
+![FLowchart](https://github.com/user-attachments/assets/504476fc-9fcf-4f4b-bdd0-9ffe9e281a70)
 
