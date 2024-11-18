@@ -1,0 +1,4 @@
+https://www.researchgate.net/publication/258359207_Safety_Benefits_of_Forward_Collision_Warning_Brake_Assist_and_Autonomous_Braking_Systems_in_Rear-End_Collisions
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8924939/
+https://www.researchgate.net/publication/338384037_A_Forward_Collision_Warning_System_Using_Driving_Intention_Recognition_of_the_Front_Vehicle_and_V2V_Communication
+https://www.researchgate.net/publication/4092563_Forward_collision_warning_with_a_single_camera
