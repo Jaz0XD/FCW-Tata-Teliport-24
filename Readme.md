@@ -145,5 +145,17 @@ Radar sensors emit **radio waves** that reflect off objects in their path. By an
 
 ![Car side view finalv1](https://github.com/user-attachments/assets/c9a53fb7-18fd-44fa-86cf-bdc61ab2a639)
 ![JXI_TATA_FINAL 1](https://github.com/user-attachments/assets/6245d4e9-db38-43c7-aa36-7f1b4a15d003)
-![FLowchart](https://github.com/user-attachments/assets/504476fc-9fcf-4f4b-bdd0-9ffe9e281a70)
+![Flowchartv4](https://github.com/user-attachments/assets/b07a98fb-a108-4e80-9b2c-9d57fa477c06)
+
+<h2>REFERENCES</h2>
+<p>https://www.researchgate.net/publication/258359207_Safety_Benefits_of_Forward_Collision_Warning_Brake_Assist_and_Autonomous_Braking_Systems_in_Rear-End_Collisions</p><br/>
+<p>https://pmc.ncbi.nlm.nih.gov/articles/PMC8924939/</p><br/>
+<p>https://www.researchgate.net/publication/338384037_A_Forward_Collision_Warning_System_Using_Driving_Intention_Recognition_of_the_Front_Vehicle_and_V2V_Communication</p><br/>
+<p>https://www.researchgate.net/publication/4092563_Forward_collision_warning_with_a_single_camera</p><br/>
+<p>https://www.researchgate.net/publication/295920228_INTRODUCTION_Forward_Collision_Warning_Clues_to_Optimal_Timing_of_Advisory_Warnings_Downloaded_from_SAE_International</p><br/>
+<p>https://www.researchgate.net/profile/Toshihiro-Hiraoka/publication/234054272_Situation-adaptive_warning_timing_of_a_forward_obstacle_collision_warning_system/links/0912f50ea1e70a0ced000000/Situation-adaptive-warning-timing-of-a-forward-obstacle-collision-warning-system.pdf</p><br/>
+<p>https://www.researchgate.net/publication/325255668_A_Perceptual_Forward_Collision_Warning_Model_using_Naturalistic_Driving_Data</p><br/>
+<p>https://www.researchgate.net/publication/264397726_Effectiveness_of_forward_obstacles_collision_warning_system_based_on_deceleration_for_collision_avoidance</p><br/>
+<p>https://www.researchgate.net/publication/377494939_Evaluating_forward_collision_warning_and_autonomous_emergency_braking_systems_in_India_using_dashboard_cameras</p><br/>
+<p>https://www.researchgate.net/publication/354607233_Forward_collision_warning_system_for_motorcyclist_using_smart_phone_sensors_based_on_time-to-collision_and_trajectory_prediction</p><br/>
 
