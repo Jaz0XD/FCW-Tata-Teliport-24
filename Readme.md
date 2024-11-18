@@ -8,7 +8,7 @@
 <h3 align='center'>Member 2: 	RAGURAM R 			(Biomedical Engineering)</h3>
 
 <p>
-#### Camera-Based Visuals for Object Detection  
+<h2>Camera-Based Visuals for Object Detection</h2><br/><br/>
 - **Working Principle**:  
    Cameras provide continuous visual data. Using a trained YOLO (v5/v8) model for object detection, the system processes the images to identify obstacles, calculate distances, and trigger warnings.
 
@@ -70,7 +70,7 @@
 </p>
 <br/><br/><br/>
 <p>
-#### RADAR based Sensor for Detection
+<h2>RADAR based Sensor for Detection</h2><br/><br/>
 #### **Working Principle**:
 Radar sensors emit **radio waves** that reflect off objects in their path. By analyzing the **reflected signals**, the system calculates the distance, speed, and direction of objects. Doppler shift is used to determine the relative velocity of moving objects, enabling accurate detection even in challenging environmental conditions.
 
@@ -141,9 +141,6 @@ Radar sensors emit **radio waves** that reflect off objects in their path. By an
 - Experience with **ADAS integration** and **automotive software standards** (e.g., ASPICE, ISO 26262).  
 
 ---
-
-#### **Key Comparison with Camera-Based Systems**:
-While cameras excel at **object classification** and detail-rich imaging, radar sensors provide **unmatched reliability in poor visibility and weather conditions**, making them a crucial complement to camera-based systems. Combining the two ensures a **robust, fail-safe ADAS system**.
 </p>
 
 ![Car side view finalv1](https://github.com/user-attachments/assets/c9a53fb7-18fd-44fa-86cf-bdc61ab2a639)
