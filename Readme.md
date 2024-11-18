@@ -18,45 +18,52 @@ Use of YOLOv8 and Camera Integration<br/>1 Front RADAR sensor (60 FOV : 250m)<br
 </p>
 
 <p>
-  Camera-Based Visuals for Object Detection
-Working Principle:
-Cameras provide continuous visual data. Using a trained YOLO (v5/v8) model for object detection, the system processes the images to identify obstacles, calculate distances, and trigger warnings.
-
-Effectiveness:
-
-Highly accurate in identifying objects with trained datasets.
-Real-time alerts prevent collisions.
-Reliability:
-
-Can fail under poor visibility (e.g., fog, rain).
-Dependent on camera resolution and processing speed.
-Scalability:
-
-Easy to adapt for other ADAS features like lane departure warnings or pedestrian detection.
-Usability:
-
-Seamless integration into ADAS systems.
-Requires minimal user interaction.
-Innovation:
-
-Combines GenAI for code generation with robust ML algorithms (YOLO).
-Advantages:
-
-High detection accuracy.
-Ability to recognize diverse object types.
-Visual data can be stored for post-event analysis.
-Disadvantages:
-
-Performance heavily dependent on lighting and environmental conditions.
-High computational cost for real-time processing.
-Software Requirements:
-
-OpenCV, YOLO (v5/v8), Python, CARLA for simulation.
-Hardware Requirements:
-
-High-resolution cameras, GPU for inference, onboard processor.
-Skills Required:
-
+Camera-Based Visuals for Object Detection<br/>
+Working Principle:<br/>
+Cameras provide continuous visual data. Using a trained YOLO (v5/v8) model for object detection, the system processes the images to identify obstacles, calculate distances, and trigger warnings.<br/>
+<br/><br/>
+Effectiveness:<br/>
+<br/>
+Highly accurate in identifying objects with trained datasets.<br/>
+Real-time alerts prevent collisions.<br/>
+  <br/><br/>
+Reliability:<br/>
+<br/>
+Can fail under poor visibility (e.g., fog, rain).<br/>
+Dependent on camera resolution and processing speed.<br/>
+  <br/><br/>
+Scalability:<br/>
+<br/>
+Easy to adapt for other ADAS features like lane departure warnings or pedestrian detection.<br/>
+<br/><br/>
+  Usability:<br/>
+<br/>
+Seamless integration into ADAS systems.<br/>
+Requires minimal user interaction.<br/>
+  <br/><br/>
+Innovation:<br/>
+<br/>
+Combines GenAI for code generation with robust ML algorithms (YOLO).<br/><br/><br/>
+Advantages:<br/>
+<br/>
+High detection accuracy.<br/>
+Ability to recognize diverse object types.<br/>
+Visual data can be stored for post-event analysis.<br/>
+<br/><br/>
+Disadvantages:<br/>
+<br/>
+Performance heavily dependent on lighting and environmental conditions.<br/>
+High computational cost for real-time processing.<br/>
+<br/><br/>Software Requirements:<br/>
+<br/>
+OpenCV, YOLO (v5/v8), Python, CARLA for simulation.<br/>
+<br/><br/>
+  Hardware Requirements:<br/>
+<br/>
+High-resolution cameras, GPU for inference, onboard processor.<br/>
+<br/><br/>
+  Skills Required:<br/>
+<br/>
 Python, ML model training, GenAI integration, automotive software compliance (e.g., MISRA, ASPICE).
 </p>
 
