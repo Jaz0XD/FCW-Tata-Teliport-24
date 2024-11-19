@@ -143,8 +143,25 @@ Radar sensors emit **radio waves** that reflect off objects in their path. By an
 ---
 </p>
 <p>
-#### **Categories Tested** <br/>
-Standard Scenarios: Stationary and moving obstacles on straight roads.<br/>Environmental Conditions: Day, night, rain, fog, snow.<br/>Traffic Complexities: Cut-in, cut-out, multi-lane scenarios.<br/>Road Types: Curves, inclines, uneven surfaces.<br/>Edge Cases: False positives, unusual obstacles, sensor malfunctions.<br/>Key Results<br/>Total Test Cases: 20<br/>Passed: 100%<br/>Metrics Achieved:<br/>Warning Time: ≤ 2.0s → Achieved: 1.8s<br/>False Positive Rate: ≤ 5% → Achieved: 3%<br/>Testing Tools<br/>Simulation: CARLA<br/>Metrics Evaluated: Warning accuracy, false positive/negative rates, driver response time.
+<h3>Categories Tested</h3> <br/>
+Standard Scenarios: Stationary and moving obstacles on straight roads.<br/>
+
+Environmental Conditions: Day, night, rain, fog, snow.<br/>
+   
+   Traffic Complexities: Cut-in, cut-out, multi-lane scenarios.<br/>
+   
+   Road Types: Curves, inclines, uneven surfaces.<br/>
+   
+   Edge Cases: False positives, unusual obstacles, sensor malfunctions.<br/>
+   ---
+   Key Results<br/>Total Test Cases: 20<br/>
+   Passed: 100%<br/>
+   Metrics Achieved:<br/>
+   Warning Time: ≤ 2.0s → Achieved: 1.8s<br/>
+   False Positive Rate: ≤ 5% → Achieved: 3%<br/>
+   ---
+   Testing Tools<br/>Simulation: CARLA<br/>
+   Metrics Evaluated: Warning accuracy, false positive/negative rates, driver response time.
 ![image](https://github.com/user-attachments/assets/4c14ee02-b801-4505-b275-9c5240870d3b)
    
  </p>
