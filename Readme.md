@@ -6,5 +6,3 @@
 <h3 align='center'>Team Leader: 	MOHAMED B SIRAJUDDEEN 	(Computer Science Engineering)</h3>
 <h3 align='center'>Member 1: 	SANDEEP G 			(Computer Science Engineering)</h3>
 <h3 align='center'>Member 2: 	RAGURAM R 			(Biomedical Engineering)</h3>
-
-

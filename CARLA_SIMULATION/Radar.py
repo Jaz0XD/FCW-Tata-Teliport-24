@@ -1,30 +1,15 @@
-'''
-Important Note: Inorder to run this script, you need to have the CARLA simulator installed on your system.
-You can download the CARLA simulator from the following link: https://carla.org/
-
-Also, you need to have the yolov8n.pt file in the same directory as this script.
-File is provided in the repository.
-
-Note: This script is a simple example to demonstrate how to use YOLOv8 object detection with CARLA simulation.
-
-Features: 
-1. Spawns a player vehicle in CARLA simulation.
-2. Uses YOLOv8 object detection to detect objects in the camera feed.
-'''
-
 import carla
 import pygame
 import numpy as np
 import cv2
-from ultralytics import YOLO  # Make sure YOLOv8 is installed
-from queue import Queue
+from ultralytics import YOLO
 import threading
+from queue import Queue
 
-# Initialize pygame
+# Initialize pygame for speed display
 pygame.init()
-WIDTH, HEIGHT = 640, 480
-front_view_screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
-third_person_screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
+WIDTH, HEIGHT = 640, 480  # Default width and height
+screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
 clock = pygame.time.Clock()
 
 # Load YOLOv8 model
@@ -41,7 +26,7 @@ def spawn_vehicle():
     vehicle_bp = blueprint_library.filter("model3")[0]  # Choose a vehicle model
     spawn_point = world.get_map().get_spawn_points()[0]
     player_vehicle = world.spawn_actor(vehicle_bp, spawn_point)
-    player_vehicle.set_autopilot(False)
+    player_vehicle.set_autopilot(True)  # Enable autopilot to follow the road
     return player_vehicle
 
 # Function to spawn other vehicles in random locations
@@ -53,18 +38,50 @@ def spawn_other_vehicles():
         vehicle = world.spawn_actor(vehicle_bp, spawn_point)
         vehicle.set_autopilot(True)  # Set autopilot for random movement
 
-# Draw bounding boxes on Pygame screen
-def draw_bounding_boxes(screen, detections):
-    for detection in detections:
-        x1, y1, x2, y2 = map(int, detection.xyxy[0])  # Bounding box coordinates
-        label = detection.cls  # Detected object class
-        confidence = detection.conf[0]  # Confidence score
-        color = (255, 0, 0)  # Red color for bounding box
+# Function to check if any vehicle is within a certain distance in front of the player
+def check_proximity(player_vehicle):
+    detection_radius = 15.0  # Detection radius in meters
+    warning_message = ""
+    vehicles = world.get_actors().filter("vehicle.*")
+    player_transform = player_vehicle.get_transform()
+    player_location = player_transform.location
+    player_forward = player_transform.get_forward_vector()
 
-        pygame.draw.rect(screen, color, (x1, y1, x2 - x1, y2 - y1), 2)
-        font = pygame.font.Font(None, 24)
-        text = font.render(f"{label} {confidence:.2f}", True, color)
-        screen.blit(text, (x1, y1 - 10))
+    for vehicle in vehicles:
+        if vehicle.id != player_vehicle.id:
+            other_location = vehicle.get_transform().location
+            distance = player_location.distance(other_location)
+            if distance < detection_radius:
+                direction = other_location - player_location
+                forward_dot = player_forward.x * direction.x + player_forward.y * direction.y + player_forward.z * direction.z
+                if forward_dot > 0:  # Check if the vehicle is in front
+                    warning_message = "WARNING: Vehicle Ahead!"
+                    break
+
+    return warning_message
+
+# Function to set up and handle radar data
+def setup_radar(player_vehicle):
+    radar_bp = world.get_blueprint_library().find("sensor.other.radar")
+    radar_bp.set_attribute("horizontal_fov", "30")  # Set Field of View
+    radar_bp.set_attribute("vertical_fov", "10")
+    radar_bp.set_attribute("range", "20")  # Detection range in meters
+
+    radar_transform = carla.Transform(carla.Location(x=2.5, z=1.0))  # Position radar sensor
+    radar = world.spawn_actor(radar_bp, radar_transform, attach_to=player_vehicle)
+
+    # Callback to process radar data
+    def radar_callback(data):
+        print("\nRadar detected:")
+        for detection in data:
+            azimuth = np.degrees(detection.azimuth)
+            altitude = np.degrees(detection.altitude)
+            distance = detection.depth
+            velocity = detection.velocity
+            print(f"Object: Distance={distance:.2f}m, Azimuth={azimuth:.2f}°, Altitude={altitude:.2f}°, Velocity={velocity:.2f}m/s")
+
+    radar.listen(lambda data: radar_callback(data))
+    return radar
 
 # Main function
 def main():
@@ -89,6 +106,9 @@ def main():
         carla.Transform(carla.Location(x=-6.0, z=2.5), carla.Rotation(pitch=-10)),
         attach_to=player_vehicle
     )
+
+    # Set up radar sensor
+    radar = setup_radar(player_vehicle)
 
     # Queues to hold camera frames for processing
     front_frame_queue = Queue(maxsize=10)
@@ -156,24 +176,6 @@ def main():
                     WIDTH, HEIGHT = event.w, event.h
                     screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
 
-            # Control movement using WASD keys
-            keys = pygame.key.get_pressed()
-            control = carla.VehicleControl()
-
-            # WASD controls
-            if keys[pygame.K_w]:  # Move forward
-                control.throttle = 0.5
-            if keys[pygame.K_s]:  # Move backward
-                control.reverse = True
-                control.throttle = 0.5
-            if keys[pygame.K_a]:  # Turn left
-                control.steer = -0.5
-            if keys[pygame.K_d]:  # Turn right
-                control.steer = 0.5
-
-            player_vehicle.apply_control(control)
-            clock.tick(60)
-
             # Display vehicle speed in Pygame
             screen.fill((0, 0, 0))  # Clear screen
             velocity = player_vehicle.get_velocity()
@@ -195,6 +197,7 @@ def main():
         # Clean up: destroy sensors and Pygame
         front_camera.destroy()
         third_person_camera.destroy()
+        radar.destroy()  # Destroy the radar sensor
         player_vehicle.destroy()
         pygame.quit()
         cv2.destroyAllWindows()
