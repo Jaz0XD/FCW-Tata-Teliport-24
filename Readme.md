@@ -171,6 +171,16 @@ Environmental Conditions: Day, night, rain, fog, snow.<br/>
    
  </p>
 
+ <h2>Clear Weather</h2>
+ ![ClearWeather](https://github.com/user-attachments/assets/95ad582b-e6c6-40dd-9866-eb57080e3e2a)<br/>
+ <h2>Rainy Weather</h2>
+ ![Rainy](https://github.com/user-attachments/assets/a0b6886c-23b6-4b4b-be88-3f825eb44ee8)<br/>
+ <h2>Foggy Weather</h2>
+ ![Fog](https://github.com/user-attachments/assets/88761cf7-2a98-4ac0-9cde-2c9ddf36be07)<br/>
+ <h2>Clear Night</h2>
+ ![ClearNight](https://github.com/user-attachments/assets/ce55e7a1-f301-46d4-bcb1-98ed543701a7)<br/>
+
+
 ![Car side view finalv1](https://github.com/user-attachments/assets/c9a53fb7-18fd-44fa-86cf-bdc61ab2a639)<br/>
 ![JXI_TATA_FINAL 1](https://github.com/user-attachments/assets/6245d4e9-db38-43c7-aa36-7f1b4a15d003)<br/>
 ![Flowchartv4](https://github.com/user-attachments/assets/b07a98fb-a108-4e80-9b2c-9d57fa477c06)<br/>
