@@ -187,8 +187,11 @@ Environmental Conditions: Day, night, rain, fog, snow.<br/>
  
  ![1](https://github.com/user-attachments/assets/d9ba8741-5132-45a4-93b7-11c3ac44abf0)
 <br/>
+<br/>
+<br/>
 
-
+ <h2>Image Details</h2>
+<br/>
 ![Car side view finalv1](https://github.com/user-attachments/assets/c9a53fb7-18fd-44fa-86cf-bdc61ab2a639)<br/>
 ![JXI_TATA_FINAL 1](https://github.com/user-attachments/assets/6245d4e9-db38-43c7-aa36-7f1b4a15d003)<br/>
 ![Flowchartv4](https://github.com/user-attachments/assets/b07a98fb-a108-4e80-9b2c-9d57fa477c06)<br/>
