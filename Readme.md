@@ -172,13 +172,17 @@ Environmental Conditions: Day, night, rain, fog, snow.<br/>
  </p>
 
  <h2>Clear Weather</h2>
- ![ClearWeather](https://github.com/user-attachments/assets/95ad582b-e6c6-40dd-9866-eb57080e3e2a)<br/>
+ ![2](https://github.com/user-attachments/assets/de0e5b4c-bba5-4f30-9ce6-6e2421fb2152)
+<br/>
  <h2>Rainy Weather</h2>
- ![Rainy](https://github.com/user-attachments/assets/a0b6886c-23b6-4b4b-be88-3f825eb44ee8)<br/>
+ ![44](https://github.com/user-attachments/assets/81c1365f-db6f-4e00-b801-ff4a9d91d43a)
+<br/>
  <h2>Foggy Weather</h2>
- ![Fog](https://github.com/user-attachments/assets/88761cf7-2a98-4ac0-9cde-2c9ddf36be07)<br/>
+ ![33](https://github.com/user-attachments/assets/f9b0c7e7-766e-4aa1-a864-32f0133e5439)
+<br/>
  <h2>Clear Night</h2>
- ![ClearNight](https://github.com/user-attachments/assets/ce55e7a1-f301-46d4-bcb1-98ed543701a7)<br/>
+ ![1](https://github.com/user-attachments/assets/d9ba8741-5132-45a4-93b7-11c3ac44abf0)
+<br/>
 
 
 ![Car side view finalv1](https://github.com/user-attachments/assets/c9a53fb7-18fd-44fa-86cf-bdc61ab2a639)<br/>
