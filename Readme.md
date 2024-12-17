@@ -180,7 +180,9 @@ Environmental Conditions: Day, night, rain, fog, snow.<br/>
 <p>https://www.researchgate.net/publication/361312318_Bluetooth_Control_Car_with_Arduino</p><br/>
 <p>https://randomnerdtutorials.com/program-upload-code-esp32-cam</p><br/>
 <p>https://digilent.com/reference/add-ons/motor-shield/reference-manual</p><br/>
-![gitrepo](https://github.com/user-attachments/assets/b17d6aee-3301-4ef1-a365-7782a5dca012)
+![gitrepo](https://github.com/user-attachments/assets/c10ac52c-1423-45fc-a61e-c982460e613b)
+
+
 
 
 
