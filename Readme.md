@@ -173,6 +173,11 @@ Environmental Conditions: Day, night, rain, fog, snow.<br/>
 ![Car side view finalv1](https://github.com/user-attachments/assets/c9a53fb7-18fd-44fa-86cf-bdc61ab2a639)
 ![JXI_TATA_FINAL 1](https://github.com/user-attachments/assets/6245d4e9-db38-43c7-aa36-7f1b4a15d003)
 ![Flowchartv4](https://github.com/user-attachments/assets/b07a98fb-a108-4e80-9b2c-9d57fa477c06)
+![Sheet 1 (2)](https://github.com/user-attachments/assets/9f354dfa-b365-48be-8c37-2f27aeff83a8)
+![Sheet 1 (1)](https://github.com/user-attachments/assets/8305a01a-4797-48c1-8f65-87e392a066a1)
+
+
+
 
 <h2>REFERENCES</h2>
 <p>https://www.researchgate.net/publication/258359207_Safety_Benefits_of_Forward_Collision_Warning_Brake_Assist_and_Autonomous_Braking_Systems_in_Rear-End_Collisions</p><br/>
